@@ -13,7 +13,7 @@ local_paths =  []
 file = None
 for opt, arg in opts:
     if opt in ('-n', '--names'):
-        names.append(arg)
+        names.append(arg.upper())
         #print(opt + ': ' + arg)
     if opt in ('-f', '--file'):
         file=arg
